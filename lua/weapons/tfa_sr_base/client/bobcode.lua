@@ -38,7 +38,7 @@ local gunbob_intensity_cvar = GetConVar("cl_tfa_gunbob_intensity")
 local gunbob_intensity = 0
 
 SWEP.WalkPos = Vector(-0.25, -0.75, -0.25)
-SWEP.WalkAng = Angle(0, 0, 0)
+SWEP.WalkAng = Angle(0.5, 0, 0)
 
 SWEP.footstepTotal = 0
 SWEP.footstepTotalTarget = 0
@@ -169,7 +169,7 @@ function SWEP:WalkBob(pos, ang, breathIntensity, walkIntensity, rate, ftv)
 	WalkPosLagged.y = l_Lerp(delta * 5 * rateScaleFac, WalkPosLagged.y, math.sin(self2.ti * walkRate + math.pi / 3) / 1.5 * gunbob_intensity * walkIntensity * 0.5)
 	pos:Add(WalkPos.x * riLocal * 0.8)
 	pos:Add(WalkPos.y * upLocal * 1)
-	ang:RotateAroundAxis(ri, -WalkPosLagged.y * -1)
+	ang:RotateAroundAxis(ri, -WalkPosLagged.y * -1.65)
 	ang:RotateAroundAxis(up, WalkPos.x * 1.7)
 	ang:RotateAroundAxis(fw, WalkPos.y * 8.5)
 
