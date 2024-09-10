@@ -141,7 +141,7 @@ function SWEP:WalkBob(pos, ang, breathIntensity, walkIntensity, rate, ftv)
 
 	----[[MULTIPLIERS]]----
 	breathIntensity = breathIntensitySmooth * gunbob_intensity * 1.5
-	walkIntensity = walkIntensitySmooth * gunbob_intensity * 1.3* math.abs(1 - self:GetSprintProgress())
+	walkIntensity = walkIntensitySmooth * gunbob_intensity * 1.2* math.abs(1 - self:GetSprintProgress())
 
 	local breatheMult2 = math.Clamp(self2.IronSightsProgressUnpredicted2 or self:GetIronSightsProgress(), 0, 1)
 	local breatheMult1 = (1 - breatheMult2) - (self:GetInspectingProgress() * 0.75)
