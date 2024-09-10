@@ -26,7 +26,7 @@ local pist_rate = 3 * rateScaleFac
 local pist_scale = 9
 local rate_clamp = 2 * rateScaleFac
 local walkIntensitySmooth, breathIntensitySmooth = 0, 0
-local walkRate = 160 / 60 * TAU / 1.085 / 2 * rateScaleFac
+local walkRate = 150 / 60 * TAU / 1.085 / 2 * rateScaleFac
 local walkVec = Vector()
 local ownerVelocity, ownerVelocityMod = Vector(), Vector()
 local zVelocity, zVelocitySmooth = 0, 0
@@ -38,7 +38,7 @@ local gunbob_intensity_cvar = GetConVar("cl_tfa_gunbob_intensity")
 local gunbob_intensity = 0
 
 SWEP.WalkPos = Vector(-0.25, -0.75, -0.25)
-SWEP.WalkAng = Angle(1, 2, -3)
+SWEP.WalkAng = Angle(0, 0, 0)
 
 SWEP.footstepTotal = 0
 SWEP.footstepTotalTarget = 0
@@ -141,7 +141,7 @@ function SWEP:WalkBob(pos, ang, breathIntensity, walkIntensity, rate, ftv)
 
 	----[[MULTIPLIERS]]----
 	breathIntensity = breathIntensitySmooth * gunbob_intensity * 1.5
-	walkIntensity = walkIntensitySmooth * gunbob_intensity * 1.3 * math.abs(1 - self:GetSprintProgress())
+	walkIntensity = walkIntensitySmooth * gunbob_intensity * 1.3* math.abs(1 - self:GetSprintProgress())
 
 	local breatheMult2 = math.Clamp(self2.IronSightsProgressUnpredicted2 or self:GetIronSightsProgress(), 0, 1)
 	local breatheMult1 = (1 - breatheMult2) - (self:GetInspectingProgress() * 0.75)
@@ -167,11 +167,11 @@ function SWEP:WalkBob(pos, ang, breathIntensity, walkIntensity, rate, ftv)
 	WalkPos.y = l_Lerp(delta * 5 * rateScaleFac, WalkPos.y, math.sin(self2.ti * walkRate) / 1.5 * gunbob_intensity * walkIntensity * 0.2)
 	WalkPosLagged.x = l_Lerp(delta * 5 * rateScaleFac, WalkPosLagged.x, -math.sin((self2.ti * walkRate * 0.5) + math.pi / 3) * gunbob_intensity * walkIntensity * 0.5)
 	WalkPosLagged.y = l_Lerp(delta * 5 * rateScaleFac, WalkPosLagged.y, math.sin(self2.ti * walkRate + math.pi / 3) / 1.5 * gunbob_intensity * walkIntensity * 0.5)
-	pos:Add(WalkPos.x * riLocal * 0.4)
-	pos:Add(WalkPos.y * upLocal * 0.8)
-	ang:RotateAroundAxis(ri, -WalkPosLagged.y * -2)
-	ang:RotateAroundAxis(up, WalkPos.x * 3)
-	ang:RotateAroundAxis(fw, WalkPos.y * 8)
+	pos:Add(WalkPos.x * riLocal * 0.8)
+	pos:Add(WalkPos.y * upLocal * 1)
+	ang:RotateAroundAxis(ri, -WalkPosLagged.y * -1)
+	ang:RotateAroundAxis(up, WalkPos.x * 1.7)
+	ang:RotateAroundAxis(fw, WalkPos.y * 8.5)
 
 	----[[CONSTANT OFFSET]]----
 	pos:Add(riLocal * walkVec.x * flip_v)
