@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\sandstorm_reloaded\pkas\T_1_A_S_PKAS_BC"
+	"$bumpmap" "models\weapons\sandstorm_reloaded\pkas\T_1_A_S_PKAS_N"
+	"$phongexponenttexture" "models\weapons\sandstorm_reloaded\pkas\T_1_A_S_PKAS_M"
+	"$phong"		"1"
+	"$phongboost"	"10"
+	"$phongalbedotint"		"1"
+	"$blendtintbybasealpha"		"1"
+	"$phongfresnelranges"	"[0.6 0.7 1]"
+	"$color2"	"[ 0.8 0.8 0.8]"
+	"$normalmapalphaenvmapmask " "1"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"30"
+	"$rimmask"	"1"
+	"$rimlightboost"	"3"
+	"Proxies"
+	{
+		"Env_Lightmap"
+		{
+			"min" "0.05"
+			"max" "0.1"
+			"envmap" "models\weapons\sandstorm_reloaded\env"
+			"color" "[1 1 1]"
+		}
+	}
+}

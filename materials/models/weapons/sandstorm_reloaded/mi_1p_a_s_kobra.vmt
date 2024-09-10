@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\sandstorm_reloaded\kobra\T_1P_A_S_Kobra_D"
+	"$bumpmap" "models\weapons\sandstorm_reloaded\kobra\T_1P_A_S_Kobra_N"
+	"$phongexponenttexture" "models\weapons\sandstorm_reloaded\kobra\T_1P_A_S_Kobra_M"
+	"$color2"	"[ 0.6 0.6 0.6]"
+	"$phong"		"1"
+	"$phongboost"	"10"
+	"$blendtintbybasealpha"	"1"
+	"$phongalbedotint"		"1"
+	"$phongfresnelranges"	"[0.6 0.7 1]"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"20"
+	"$rimmask"	"1"
+	"$rimlightboost"	"1"
+	"Proxies"
+	{
+		"Env_Lightmap"
+		{
+			"min" "0.05"
+			"max" "0.1"
+			"envmap" "models\weapons\sandstorm_reloaded\env"
+			"color" "[1 1 1]"
+		}
+	}
+}

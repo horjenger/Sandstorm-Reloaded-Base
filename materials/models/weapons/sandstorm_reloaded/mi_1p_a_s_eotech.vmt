@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\sandstorm_reloaded\eotech\T_1P_A_S_Eotech_BLK_D"
+	"$bumpmap" "models\weapons\sandstorm_reloaded\eotech\T_1P_A_S_Eotech_N"
+	"$phongexponenttexture" "models\weapons\sandstorm_reloaded\eotech\T_1P_A_S_Eotech_M"
+	"$phong"		"1"
+	"$color2"	"[0.9 0.9 0.9]"
+	"$phongboost"	"12"
+	"$normalmapalphaenvmapmask " "1"
+	"$phongalbedotint"		"1"
+	"$phongfresnelranges"	"[0.3 0.5 1]"
+	"$rimlight"	"1"
+	"$rimlightexponent"		"30"
+	"$rimmask"	"1"
+	"$rimlightboost"	"4"
+	"Proxies"
+	{
+		"Env_Lightmap"
+		{
+			"min" "0.05"
+			"max" "0.1"
+			"envmap" "models\weapons\sandstorm_reloaded\env"
+			"color" "[1 1 1]"
+		}
+	}
+}
