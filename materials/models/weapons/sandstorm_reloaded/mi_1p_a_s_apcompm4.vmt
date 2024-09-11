@@ -13,6 +13,7 @@
 	"$rimlightexponent"		"20"
 	"$rimmask"	"1"
 	"$rimlightboost"	"1"
+	"$envmapfresnel" "1"
 	"Proxies"
 	{
 		"Env_Lightmap"
