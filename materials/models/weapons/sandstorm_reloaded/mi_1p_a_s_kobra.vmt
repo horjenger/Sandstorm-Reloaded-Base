@@ -18,9 +18,9 @@
 	{
 		"Env_Lightmap"
 		{
-			"min" "0.05"
-			"max" "0.1"
-			"envmap" "models\weapons\sandstorm_reloaded\env"
+			"min" "0.01"
+			"max" "0.15"
+			"envmap" "models\weapons\sandstorm_reloaded\fo4_dith"
 			"color" "[1 1 1]"
 		}
 	}
