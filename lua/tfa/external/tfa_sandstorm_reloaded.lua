@@ -38,41 +38,47 @@ TFA.AddWeaponSound(pref .. ".LeanOut", {
 ")")
 
 TFA.AddWeaponSound(pref .. ".SpeedReloadPouch", { 
-	path.."foley/primary_speedreload_pouch_01.wav",
-	path.."foley/primary_speedreload_pouch_02.wav",
-	path.."foley/primary_speedreload_pouch_03.wav",
-	path.."foley/primary_speedreload_pouch_04.wav",
-	path.."foley/primary_speedreload_pouch_05.wav",
-	path.."foley/primary_speedreload_pouch_06.wav"},
+	path.."shared/primary/primary_speedreload_pouch_01.wav",
+	path.."shared/primary/primary_speedreload_pouch_02.wav",
+	path.."shared/primary/primary_speedreload_pouch_03.wav",
+	path.."shared/primary/primary_speedreload_pouch_04.wav",
+	path.."shared/primary/primary_speedreload_pouch_05.wav",
+	path.."shared/primary/primary_speedreload_pouch_06.wav"},
 ")")
 
 TFA.AddWeaponSound(pref .. ".SidearmSpeedReloadPouch", { 
-	path.."foley/sidearm_speedreload_pouch_01.wav",
-	path.."foley/sidearm_speedreload_pouch_02.wav",
-	path.."foley/sidearm_speedreload_pouch_03.wav",
-	path.."foley/sidearm_speedreload_pouch_04.wav",
-	path.."foley/sidearm_speedreload_pouch_05.wav",
-	path.."foley/sidearm_speedreload_pouch_06.wav"},
+	path.."shared/sidearm/sidearm_speedreload_pouch_01.wav",
+	path.."shared/sidearm/sidearm_speedreload_pouch_02.wav",
+	path.."shared/sidearm/sidearm_speedreload_pouch_03.wav",
+	path.."shared/sidearm/sidearm_speedreload_pouch_04.wav",
+	path.."shared/sidearm/sidearm_speedreload_pouch_05.wav",
+	path.."shared/sidearm/sidearm_speedreload_pouch_06.wav"},
 ")")
 
 TFA.AddWeaponSound(pref .. ".PistolUnholster", { 
-	path.."foley/pistol_unholster_01.wav",
-	path.."foley/pistol_unholster_02.wav",
-	path.."foley/pistol_unholster_03.wav",
-	path.."foley/pistol_unholster_04.wav",
-	path.."foley/pistol_unholster_05.wav"},
+	path.."shared/pistol/pistol_unholster_01.wav",
+	path.."shared/pistol/pistol_unholster_02.wav",
+	path.."shared/pistol/pistol_unholster_03.wav",
+	path.."shared/pistol/pistol_unholster_04.wav",
+	path.."shared/pistol/pistol_unholster_05.wav"},
 ")")
 
 TFA.AddWeaponSound(pref .. ".PistolHolster", { 
-	path.."foley/pistol_holster_v2_01.wav",
-	path.."foley/pistol_holster_v2_02.wav",
-	path.."foley/pistol_holster_v2_03.wav",
-	path.."foley/pistol_holster_v2_04.wav",
-	path.."foley/pistol_holster_v2_05.wav"},
+	path.."shared/pistol/pistol_holster_v2_01.wav",
+	path.."shared/pistol/pistol_holster_v2_02.wav",
+	path.."shared/pistol/pistol_holster_v2_03.wav",
+	path.."shared/pistol/pistol_holster_v2_04.wav",
+	path.."shared/pistol/pistol_holster_v2_05.wav"},
 ")")
 
 TFA.AddWeaponSound(pref .. ".PistolDryFire", { 
-	path.."foley/pistol_dry_fire_01.wav",
-	path.."foley/pistol_dry_fire_02.wav",
-	path.."foley/pistol_dry_fire_03.wav"},
+	path.."shared/pistol/pistol_dry_fire_01.wav",
+	path.."shared/pistol/pistol_dry_fire_02.wav",
+	path.."shared/pistol/pistol_dry_fire_03.wav"},
+")")
+
+TFA.AddWeaponSound(pref .. ".RifleDryFire", { 
+	path.."shared/rifle/rifle_dry_fire_01.wav",
+	path.."shared/rifle/rifle_dry_fire_02.wav",
+	path.."shared/rifle/rifle_dry_fire_03.wav"},
 ")")
