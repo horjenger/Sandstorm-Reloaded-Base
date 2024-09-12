@@ -8,6 +8,7 @@
 	"$phongalbedotint"		"1"
 	"$blendtintbybasealpha"		"1"
 	"$phongfresnelranges"	"[0.6 0.7 1]"
+	"$phongwarptexture" "models\weapons\sandstorm_reloaded\phongwarp_custom"
 	"$color2"	"[ 0.8 0.8 0.8]"
 	"$normalmapalphaenvmapmask " "1"
 	"$rimlight"	"1"

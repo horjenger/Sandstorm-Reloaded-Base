@@ -9,6 +9,7 @@
 	"$normalmapalphaenvmapmask " "1"
 	"$phongalbedotint"		"1"
 	"$phongfresnelranges"	"[0.3 0.5 1]"
+	"$phongwarptexture" "models\weapons\sandstorm_reloaded\phongwarp_custom"
 	"$rimlight"	"1"
 	"$rimlightexponent"		"30"
 	"$rimmask"	"1"
